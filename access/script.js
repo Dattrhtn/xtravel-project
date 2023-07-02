@@ -2,15 +2,18 @@
 function changeHeader(){
     var scrollPosition = document.documentElement.scrollTop;
     var objHeader = document.getElementById('header');
+    var objTop = document.getElementById('scroll__top');
     if(scrollPosition > 0)
     {
         objHeader.style.padding = '13px 0';
         objHeader.style.opacity = 1;
+        objTop.style.display = 'block';
     }
     else
     {
         objHeader.style.padding = '35px 0';
         objHeader.style.opacity = 0.7;
+        objTop.style.display = 'none';
     }
 }
 window.addEventListener('scroll', changeHeader);
