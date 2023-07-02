@@ -897,6 +897,29 @@ html{
 .header__content--big .header__big--icon:hover{
     cursor: pointer;
 }
+#scroll__top{
+    position:fixed;
+    bottom:50px;
+    right:30px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background-color: blueviolet;
+    border-radius: 50%;
+    z-index: 9;
+}
+#scroll__top a{
+    color:white;
+    text-decoration: none;
+}
+#scroll__top i{
+    font-size: 25px;
+    margin-top: 50%;
+    transform: translateY(-50%);
+}
+#scroll__top:hover{
+    background-color: rgb(8, 140, 173);
+}
 
 
 
