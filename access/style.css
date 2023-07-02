@@ -906,6 +906,7 @@ html{
     text-align: center;
     background-color: blueviolet;
     border-radius: 50%;
+    display: none;
     z-index: 9;
 }
 #scroll__top a{
