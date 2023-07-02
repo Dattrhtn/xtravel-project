@@ -786,6 +786,9 @@ html{
     color:orange;
     font-size:15px;
 }
+.footer__pay--img{
+    margin-bottom: 10px;
+}
 .footer__pay--img img{
     display: inline-block;
     width: 50px;
@@ -1013,5 +1016,11 @@ html{
     }
     .home__slogan{
         top:30%;
+    }
+    .header__search{
+        display: none;
+    }
+    .header__menu{
+        width: 75%;
     }
 }
