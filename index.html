@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./access/style.css">
+    <link rel="stylesheet" href="./access/icons/themify-icons/themify-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    <div id="main">
+        <div id="header">
+            <div class="header__container">
+                <div class="header__logo">
+                    <a href="#">XTRAVEL</a>
+                </div>
+                <div class="header__page">
+                    <ul id="nav">
+                        <li id="headerHome" class="header__page--member" onclick="borderAdd1()"><a href="#">HOME</a></li>
+                        <li id="headerAbout"class="header__page--member" onclick="borderAdd2()"><a href="#">ABOUT</a></li>
+                        <li id="headerDes" class="header__page--member" onclick="borderAdd3()"><a href="#">DESTINATION</a></li>
+                        <li id="headerTour" class="header__page--member" onclick="borderAdd4()"><a href="#">TOUR</a></li>
+                        <li id="headerBlog" class="header__page--member" onclick="borderAdd5()"><a href="#">BLOG</a></li>
+                    </ul>
+                </div>
+                <div class="header__search">
+                    <a href="#">
+                        <i class="ti-search"></i>
+                    </a>
+                </div>
+                <div class="header__menu">
+                        <i class="fas fa-bars" onclick="openHeader()"></i>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="home">
+            <div class="home__background"></div>
+            <div class="home__slogan">
+                <h1 class="home__slogan--name">Endless Journey</h1>
+                <h3 class="home__slogan--description">Lorem ipsum dolor sit amet consectetur adipisicing elit. A cumque error sequi asperiores ea qui.</h3>
+            </div>
+        </div>
+        
+        <div id="search">
+            <div class="search__container container">
+                <div class="row align-items-center" style="justify-content:center;">
+                    <div class="col-4">
+                        <div class="search__container--name">Destination</div>
+                        <select name="" id="">
+                            <option value="">Viet Nam</option>
+                            <option value="">Canada</option>
+                            <option value="">England</option>
+                            <option value="">France</option>
+                        </select>
+                    </div>
+                    <div class="col-3">
+                        <div class="search__container--name">Check In</div>
+                        <input type="date" placeholder="MM/DD/YYYY">
+                    </div>
+                    <div class="col-3">
+                        <div class="search__container--name">Check Out</div>
+                        <input type="date" placeholder="MM/DD/YYYY">
+                    </div>
+                    <div class="col-2" style="min-width: 190px;">
+                        <div class="row">
+                            <div class="col-1" style="min-width: 95px;">
+                                <div class="search__container--name">Adult</div>
+                                <input type="number" placeholder="0">
+                            </div>
+                            <div class="col-1" style="min-width: 95px;">
+                                <div class="search__container--name">Child</div>
+                                <input type="number" placeholder="0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="search__container--button">
+                    <button>Search</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="us">
+            <div class="us__container">
+                <div class="row us__image--first" style="margin-bottom: 50px;">
+                    <div class="col-md-6">
+                        <h1 class="us__slogan">Explore All Tour Of The World With Us</h1>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="./access/images/home_us/c7c4elegquhjubd1xmyb-1.jpg" alt="">
+                    </div>
+                </div>    
+                <div class="row us__image--second">
+                    <div class="col-md-6">
+                        <img src="./access/images/home_us/Captions+for+travelling+with+friends.jpg" alt="">
+                    </div>
+                    <div class="col-md-6">
+                        <h5 class="us__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, doloremque ipsum eos soluta doloribus aliquid corrupti alias voluptatem dignissimos minima? Eaque nemo ratione doloremque, laborum, voluptate voluptatem sit adipisci atque facilis maiores, nisi architecto enim porro at alias officia ad.
+                            <div class="row" style="justify-content: space-between; margin-top: 30px;">
+                                <div class="col" style="font-size: 17px;"><i class="fas fa-solid fa-plane" style="padding-right: 5px; font-size: 20px;"></i>Tour Guide</div>
+                                <div class="col" style="font-size: 17px;"><i class="fas fa-solid fa-comments-dollar" style="padding-right: 5px;font-size: 20px;"></i>Friendly Price</div>
+                                <div class="col" style="font-size: 17px;"><i class="fas fa-folder" style="padding-right: 5px;font-size: 20px;"></i>Reliable Tour</div>
+                            </div>
+                            <div class="us__second--button">
+                                <button> <a href="#contact">CONTACT US</a>  <i class="far fa-comments" style="padding-left: 10px;;"></i></button>
+                            </div>
+                            
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="hometour">
+            <div class="hometour__container">
+                <div class="hometour__header">
+                    <div class="hometour__header--slogan">
+                        <h1>Best Tour Offers</h1>
+                    </div>
+                    <div class="hometour__header--description">
+                        <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit quia dolore illo tempore enim maxime!</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="row hometour__member">
+                                <div class="col-md-6 hometour__img">    
+                                    <img src="./access/images/home_tour/home_tour_first.jpg" alt="">
+                                </div>
+                                <div class="col-md-6 hometour__decription">
+                                    <div class="hometour__description--price" style="display:inline-block;">
+                                        <h1 style="display: inline-block; color:rgb(234, 172, 58); font-weight: 700;">$50</h1> 
+                                        <h6 style="display: inline-block; color:rgba(0, 0, 0, 0.5);">per night</h6>
+                                    </div>
+                                    <div class="hometour__description--city">Italy</div>
+                                    <div class="hometour__description--location">Amalfi Coast</div>
+                                    <div class="fa fa-star"></div>
+                                    <div class="fa fa-star"></div>
+                                    <div class="fa fa-star"></div>
+                                    <div class="fa fa-star"></div>
+                                    <div class="fa fa-star"></div>
+                                    <h6 class="hometour__description--text" style="color: rgba(0, 0, 0, 0.5);">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero non, quos architecto error aut facilis.</h6>
+                                    <button class="hometour__description--read">Read more<i class="fas fa-caret-right" style="padding-left: 5px;"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row hometour__member">
+                                <div class="col-md-6 hometour__img">    
+                                    <img src="./access/images/home_tour/home_tour_second.jpg" alt="">
+                                </div>
+                                <div class="col-md-6 hometour__decription">
+                                    <div class="hometour__description--price" style="display: inline-block;"">
+                                        <h1 style="display: inline-block; color:rgb(234, 172, 58); font-weight: 700;">$70</h1>
+                                        <h6 style="display: inline-block; color:rgba(0, 0, 0, 0.5);">per night</h6>
+                                    </div>
+                                    <div class="hometour__description--city">France</div>
+                                    <div class="hometour__description--location">Paris</div>
+                                    <div class="fa fa-star"></div>
+                                    <div class="fa fa-star"></div>
+                                    <div class="fa fa-star"></div>
+                                    <div class="fa fa-star"></div>
+                                    <div class="far fa-star"></div>
+                                    <h6 class="hometour__description--text" style="color: rgba(0, 0, 0, 0.5);">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero non, quos architecto error aut facilis.</h6>
+                                    <button class="hometour__description--read">Read more<i class="fas fa-caret-right" style="padding-left: 5px;"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="row hometour__member">
+                                <div class="col-md-6 hometour__img">    
+                                    <img src="./access/images/home_tour/home_tour_third.jpg" alt="">
+                                </div>
+                                <div class="col-md-6 hometour__decription">
+                                    <div class="hometour__description--price" style="display: inline-block;"">
+                                        <h1 style="display: inline-block; color:rgb(234, 172, 58); font-weight: 700;">$50</h1>
+                                        <h6 style="display: inline-block; color:rgba(0, 0, 0, 0.5);">per night</h6>
+                                    </div>
+                                    <div class="hometour__description--city">England</div>
+                                    <div class="hometour__description--location">London</div>
+                                    <div class="fa fa-star"></div>
+                                    <div class="fa fa-star"></div>
+                                    <div class="fa fa-star"></div>
+                                    <div class="fa fa-star"></div>
+                                    <div class="fa fa-star"></div>
+                                    <h6 class="hometour__description--text" style="color: rgba(0, 0, 0, 0.5);">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero non, quos architecto error aut facilis.</h6>
+                                    <button class="hometour__description--read">Read more<i class="fas fa-caret-right" style="padding-left: 5px;"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row hometour__member">
+                                <div class="col-md-6 hometour__img">    
+                                    <img src="./access/images/home_tour/home_tour_fourth.JPG" alt="">
+                                </div>
+                                <div class="col-md-6 hometour__decription">
+                                    <div class="hometour__description--price" style="display: inline-block;"">
+                                        <h1 style="display: inline-block; color:rgb(234, 172, 58); font-weight: 700;">$50</h1>
+                                        <h6 style="display: inline-block; color:rgba(0, 0, 0, 0.5);">per night</h6>
+                                    </div>
+                                    <div class="hometour__description--city">United States</div>
+                                    <div class="hometour__description--location">New York</div>
+                                    <div class="fa fa-star"></div>
+                                    <div class="fa fa-star"></div>
+                                    <div class="fa fa-star"></div>
+                                    <div class="fa fa-star"></div>
+                                    <div class="fa fa-star"></div>
+                                    <h6 class="hometour__description--text" style="color: rgba(0, 0, 0, 0.5);">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero non, quos architecto error aut facilis.</h6>
+                                    <button class="hometour__description--read">Read more<i class="fas fa-caret-right" style="padding-left: 5px;"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+              </div>
+            </div>  
+        </div>
+
+
+        <div id="trending">
+            <div class="trending__container">
+                <div class="trending__container--header">
+                    <div class="trending__header--slogan">
+                        <h1>Trending</h1>
+                    </div>
+                    <div class="trending__header--description">
+                        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem voluptas quaerat dignissimos sed ea dolorem vero magnam corporis. Id, sed.</h5>
+                    </div>
+                </div>
+                
+                <div class="row trending__show--container">
+                    <div class="trending__show--img" style="position: relative;">
+                        <div id="thuysi" class="trending__img--info" style="position: absolute;opacity: 0;">
+                            <div id="thuysi_content" class="trending__info" style="position: absolute; z-index: 2; display: none;">
+                                <h2>Switzerland</h2>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <div class="trending__infor--des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit hic, quis beatae placeat delectus vitae?</div>
+                                <div class="trending__infor--button"><button>3 tours<i class="fas fa-caret-right" style="margin-left: 10px;"></i></button></div>
+                            </div>
+                            <img  src="./access/images/trending/switzerland_2x.jpg" alt=""  >
+                        </div>
+                        <div id="singapore" class="trending__img--info" style="position: absolute;opacity: 0;">
+                            <div id="singapore_content" class="trending__info" style="position: absolute; z-index: 1; display: none;">
+                                <h2>Singapore</h2>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <div class="trending__infor--des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit hic, quis beatae placeat delectus vitae?</div>
+                                <div class="trending__infor--button"><button>3 tours<i class="fas fa-caret-right" style="margin-left: 10px;"></i></button></div>
+                            </div>
+                            <img  src="./access/images/trending/sing2-1677486097-1677486107-2836-1677486119.jpg" alt="" >
+                        </div>
+                        <div id="VietNam" class="trending__img--info" style="position: absolute;">
+                            <div id="VietNam_content" class="trending__info" style="position: absolute; z-index: 1;">
+                                <h2>Viet Nam</h2>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <div class="trending__infor--des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit hic, quis beatae placeat delectus vitae?</div>
+                                <div class="trending__infor--button"><button>3 tours<i class="fas fa-caret-right" style="margin-left: 10px;"></i></button></div>
+                            </div>
+                            <img  src="./access/images/trending/VietNam.jpg" alt="" >
+                        </div>
+                        <div id="uc"class="trending__img--info" style="position: absolute;opacity: 0;">
+                            <div id="uc_content" class="trending__info" style="position: absolute; z-index: 2; display: none;">
+                                <h2>Australia</h2>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <div class="trending__infor--des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit hic, quis beatae placeat delectus vitae?</div>
+                                <div class="trending__infor--button"><button>3 tours<i class="fas fa-caret-right" style="margin-left: 10px;"></i></button></div>
+                            </div>
+                            
+                            <img  src="./access/images/trending/Uc.jpg" alt=""  >
+                        </div>
+                        <div id="china" class="trending__img--info" style="position: absolute; opacity: 0;">
+                            <div id="china_content" class="trending__info" style="position: absolute; z-index: 1; display: none;">
+                                <h2>China</h2>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <div class="trending__infor--des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit hic, quis beatae placeat delectus vitae?</div>
+                                <div class="trending__infor--button"><button>3 tours<i class="fas fa-caret-right" style="margin-left: 10px;"></i></button></div>
+                            </div>
+                            <img  src="./access/images/trending/china.jpg" alt=""  >
+                        </div>
+                    </div>
+                </div>
+                <div id="row-tele" class="trending__container--image" style="display:flex; align-items:center; min-height: 200px;">
+                    <div class="trending__image trending__image--first" onclick="uptoshow1(), anhShow1()">
+                        <img id="up1" src="./access/images/trending/switzerland_2x.jpg" alt="">
+                        <div id="des-mobile1" class="trending__mobile--des">
+                            <h4>Switzerland</h4>
+                            <button>3 tours<i class="fas fa-caret-right" style="margin-left: 10px;"></i></button>
+                        </div>
+                    </div>
+                    <div class="trending__image trending__image--second" onclick="uptoshow2(), anhShow2()">
+                        <img id="up2" src="./access/images/trending/sing2-1677486097-1677486107-2836-1677486119.jpg" alt="">
+                        <div id="des-mobile2" class="trending__mobile--des">
+                            <h4>Singapore</h4>
+                            <button>3 tours<i class="fas fa-caret-right" style="margin-left: 10px;"></i></button>
+                        </div>
+                    </div>
+                    <div class="trending__image trending__image--thirth" onclick="uptoshow3(), anhShow3()">
+                        <img id="up3" src="./access/images/trending/VietNam.jpg" alt="">
+                        <div id="des-mobile3" class="trending__mobile--des">
+                            <h4>Viet Nam</h4>
+                            <button>3 tours<i class="fas fa-caret-right" style="margin-left: 10px;"></i></button>
+                        </div>
+                    </div>
+                    <div class="trending__image trending__image--four" onclick="uptoshow4(), anhShow4()">
+                        <img id="up4" src="./access/images/trending/Uc.jpg" alt="">
+                        <div id="des-mobile4" class="trending__mobile--des">
+                            <h4>Australia</h4>
+                            <button>3 tours<i class="fas fa-caret-right" style="margin-left: 10px;"></i></button>
+                        </div>
+                    </div>
+                    <div class="trending__image trending__image--five" onclick="uptoshow5(), anhShow5()">
+                        <img id="up5" src="./access/images/trending/china.jpg" alt="">
+                        <div id="des-mobile5" class="trending__mobile--des">
+                            <h4>China</h4>
+                            <button>3 tours<i class="fas fa-caret-right" style="margin-left: 10px;"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="review">
+            <div class="review__container">
+                <div class="review__container--header">
+                    <div class="review__header--slogan">
+                        <h1>Reviews By Clients</h1>
+                    </div>
+                    <div class="review__header--description">
+                        <h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis, quibusdam.</h5>
+                    </div>
+                </div>
+                <div class="row review__container--body" style="margin-left:0 !important; margin-right:0 !important;">
+                    <div class="col-md-6 review__body" style="position: relative; overflow: hidden;    white-space: nowrap; padding-right: 0;">
+                        <div id="col-cd">  
+                            <div id="lts1" class="review__body--author">
+                                <div class="row review__author">
+                                    <div class="col-1 review__author--img">
+                                        <img class="col-2"src="./access/images/author/author_img.jpg" alt="">
+                                    </div>
+                                    <div class="col-8 review__author--name">
+                                        Ryan Jackman
+                                    </div>
+                                </div>
+                                <div class="review__body--comment"">
+                                    
+                                    <h5><i class="fas fa-quote-left"></i>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, saepe?</h5>
+                                    
+                                </div>
+                            </div>
+                            <div id="lts2" class="review__body--author">
+                                <div class="row review__author">
+                                    <div class="col-1 review__author--img">
+                                        <img class="col-2"src="./access/images/author/author_img.jpg" alt="">
+                                    </div>
+                                    <div class="col-8 review__author--name">
+                                        Hugh Reynolds
+                                    </div>
+                                </div>
+                            
+                                <div class="review__body--comment"">
+                                    
+                                    <h5><i class="fas fa-quote-left"></i>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, saepe? Commodi sed architecto.</h5>
+                                    
+                                </div>
+                            </div>
+                            <div id="lts3" class="review__body--author">
+                                <div class="row review__author">
+                                    <div class="col-1 review__author--img">
+                                        <img class="col-2"src="./access/images/author/author_img.jpg" alt="">
+                                    </div>
+                                    <div class="col-8 review__author--name">
+                                        Ryan jackman
+                                    </div>
+                                </div>
+                            
+                                <div class="review__body--comment"">
+                                    
+                                    <h5><i class="fas fa-quote-left"></i>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, saepe? Commodi sed</h5>
+                                    
+                                </div>
+                            </div>
+                        </div> 
+
+
+
+                        <div class="review__body--button">
+                            <button  onclick="rotateTextReverse()" class="review__button--pre"><i class="fas fa-caret-left"></i></button>
+                            <button  onclick="rotateText()" class="review__button--next"><i class="fas fa-caret-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-md-6" style="padding:0;">
+                        <div class="review__body--image">
+                            <img src="./access/images/review/khach-hang.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="contact">
+            <div class="contact__container">
+                <div class="row">
+                    <div class="col">
+                        <div class="contact__container--header">
+                            <div class="contact__header--name">
+                                <h1>Contact us</h1>
+                            </div>
+                            <div class="contact__header--description">
+                                <h5>Lorem ipsum, dolor sit amet consectetur.</h5>
+                            </div>
+                        </div>
+                        <div class="contact__container--information">
+                            <div class="row">
+                                <h3><i class="fas fa-phone"></i>Phone</h3>
+                                <i>(+84)123456789, (+84)255836643622</i>
+                            </div>
+                            <div class="row">
+                                <h3><i class="fas fa-map"></i>Location</h3>
+                                <i>Minh Khai, Bac Tu Liem, Ha Noi, Viet Nam</i>
+                            </div>
+                            <div class="row">
+                                <h3><i class="fas fa-envelope"></i>Email</h3>
+                                <i>ghita123@gmail.com</i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="contact__container--table">
+                            <div class="row">
+                                <div class="col" style="min-width:160px">
+                                    <h5>Email</h5>
+                                    <input type="email" placeholder="Input your Email">
+                                </div>
+                                <div class="col" style="min-width:160px">
+                                    <h5>Name</h5>
+                                    <input type="text" placeholder="Input your name">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <h5>Address</h5>
+                                    <input type="text" placeholder="Input your address">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <h5>Message</h5>
+                                    <textarea name="" id="" cols="30" rows="7" placeholder="Input your message"></textarea>
+                                </div>
+                            </div>
+                            <button class="contact__table--button">SEND</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="footer">
+            <div class="footer__shape">
+
+            </div>
+            <div class="footer__container">
+                <div class="row">
+                    <div class="col" style="min-width:188px;">
+                        <div class="footer__container--web">
+                            <h5 class="footer__web--name" style="font-size: 30px; font-weight:800;">XTRAVEL</h5>
+                            <h5 class="footer__web--description" style="margin:20px 0;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis aliquid eos est commodi qui aut explicabo illum nesciunt natus aperiam.</h5>
+                            <h5 class="footer__web--icon">
+                                <i class="fab fa-facebook"></i>
+                                <i class="fab fa-instagram"></i>
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-linkedin"></i>
+                                <i class="fab fa-dribbble"></i>
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="footer__container--post">
+                            <h3 class="footer__post--name" style="color:white; font-weight: 600; font-size:25px;">POST</h3>
+                            <div class="post__item">
+                                <div class="post__item--class post__item--first" >
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <img src="./access/images/footer/anh_1.jpg" alt="">
+                                        </div>
+                                        <div class="col">
+                                            <div class="post__first--description"style="display: inline-block;">
+                                                <div class="post__first--name">
+                                                    <a href="">Days of future past</a>
+                                                </div>
+                                                <div class="post__first--date">
+                                                    <i>April 10th 2023</i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post__item--class post__item--second">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <img src="./access/images/footer/anh_2.jpg" alt="">
+                                        </div>
+                                        <div class="col">
+                                            <div class="post__second--name">
+                                                <a href="">The greatest vacation</a>
+                                            </div>
+                                            <div class="post__second--date">
+                                                <i>April 10th 2023</i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post__item--class post__item--third">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <img src="./access/images/footer/anh_3.jpg" alt="">
+                                        </div>
+                                        <div class="col">
+                                            <div class="post__third--name">
+                                                <a href="">Where are we going this summer?</a>
+                                            </div>
+                                            <div class="post__third--date">
+                                                <i>April 10th 2023</i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="footer__container--pay">
+                            <h3 class="footer__pay--name" style="color:white; font-weight: 600; font-size:25px;">ACCEPT PAYMENT</h3>
+                            <div class="footer__pay--img">
+                                <img src="./access/images/footer/thanh toan/Visa.svg.png" alt="">
+                                <img src="./access/images/footer/thanh toan/mc.png" alt="">
+                                <img src="./access/images/footer/thanh toan/zalo.png" alt="">
+                                <img src="./access/images/footer/thanh toan/viettelpay.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="footer__container--contact">
+                            <h3 class="footer__contact--name" style="color:white; font-weight: 600; font-size:25px;">CONTACT</h3>
+                            <h5>51/134 Cau Dien, Minh Khai, Bac Tu Liem, Ha Noi</h5>
+                            <h5>(+84)328689795</h5>
+                            <h5>tritndt@gmail.com</h5>
+                            <h5><a href=""  style="text-decoration: none; color: white;">www.webtravel.com</a></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal" onclick="hideHeader()">
+        
+    </div>
+    <div id="header--hide-open" class="header--hide">
+        <div class="header__content--big">
+            <div class="header__big--icon" onclick="hideHeader()"><i class="fas fa-times"></i></div>
+
+            <ul id="nav">
+                <li  class="header__hide--member" onclick="changeColor1()"><a href="#" id="headerHideHome">HOME</a></li>
+                <li  class="header__hide--member" onclick="changeColor2()"><a href="#" id="headerHideAbout">ABOUT</a></li>
+                <li  class="header__hide--member" onclick="changeColor3()"><a href="#" id="headerHideDes">DESTINATION</a></li>
+                <li  class="header__hide--member" onclick="changeColor4()"><a href="#" id="headerHideTour">TOUR</a></li>
+                <li  class="header__hide--member" onclick="changeColor5()"><a href="#" id="headerHideBlog">BLOG</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="./access/script.js"></script>
+</body>
+</html>
